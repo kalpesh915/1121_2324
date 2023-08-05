@@ -1,20 +1,10 @@
-/// local variable scope
+/// example of define in c language
+
 #include<stdio.h>
 
+#define p printf
+
 void main(){
-    int ip = 10;
-
-    printf("\n value of ip is %d", ip);
-
-    {
-        int ip = 15;
-        printf("\n value of ip is %d", ip);
-    }
-
-    {
-        int ip = 20;
-        printf("\n value of ip is %d", ip);
-    }
-
-    printf("\n value of ip is %d", ip);
+    p("Welcome to example of define in c language");
+    p("\n another line of code");
 }

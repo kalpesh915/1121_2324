@@ -1,6 +1,8 @@
-/// local variable
+/// global with local variable and same name
 
 #include<stdio.h>
+
+int ip = 100;
 
 void main(){
     int ip = 10;
@@ -13,6 +15,10 @@ void main(){
 
     {
         int ip = 30;
+        printf("\n value of ip is %d", ip);
+    }
+
+    {
         printf("\n value of ip is %d", ip);
     }
 

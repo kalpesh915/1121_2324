@@ -1,23 +1,10 @@
-/// global variable scope
+/// example of define in c language
+
 #include<stdio.h>
 
-
-int ip = 100;
+#define p printf
+#define year 2023
 
 void main(){
-    int ip = 10;
-
-    printf("\n value of ip is %d", ip);
-
-    {
-        int ip = 15;
-        printf("\n value of ip is %d", ip);
-    }
-
-    {
-        int ip = 20;
-        printf("\n value of ip is %d", ip);
-    }
-
-    printf("\n value of ip is %d", ip);
+    p("\n Current year is %d", year);
 }

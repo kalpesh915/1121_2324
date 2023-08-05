@@ -1,20 +1,10 @@
-/// global variable scope
+/// example of constant in c language
+
 #include<stdio.h>
 
-
-int ip = 100;
-
 void main(){
-
+    const int ip = 10;
     printf("\n value of ip is %d", ip);
-
-    {
-        printf("\n value of ip is %d", ip);
-    }
-
-    {
-        printf("\n value of ip is %d", ip);
-    }
-
+    ip = 15; /// error constant cannot be modify
     printf("\n value of ip is %d", ip);
 }
