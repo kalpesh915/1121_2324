@@ -1,15 +1,27 @@
-/// div vs mod
+/**
+    create result with 5 subjects
+*/
 
 #include<stdio.h>
 
 void main(){
-    int ip1, ip2;
+    int sub1, sub2, sub3, sub4, sub5, total;
+    float percentage;
 
-    printf("\n Enter value for ip1 \t");
-    scanf("%d", &ip1);
-    printf("\n Enter value for ip2 \t");
-    scanf("%d", &ip2);
+    printf("\n Enter marks for subject 1 \t");
+    scanf("%d", &sub1);
+    printf("\n Enter marks for subject 2 \t");
+    scanf("%d", &sub2);
+    printf("\n Enter marks for subject 3 \t");
+    scanf("%d", &sub3);
+    printf("\n Enter marks for subject 4 \t");
+    scanf("%d", &sub4);
+    printf("\n Enter marks for subject 5 \t");
+    scanf("%d", &sub5);
 
-    printf("\n div of ip1 and ip2 is %d", ip1 / ip2);
-    printf("\n mod of ip1 and ip2 is %d", ip1 % ip2);
+    total = sub1 + sub2 + sub3 + sub4 + sub5;
+    percentage = (float) total / 5;
+
+    printf("\n Total marks are %d", total);
+    printf("\n Percentage is %f", percentage);
 }

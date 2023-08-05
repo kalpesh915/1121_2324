@@ -1,18 +1,22 @@
-/// basic arethmatic operations
+/**
+    simple light bill
+*/
 
 #include<stdio.h>
 
 void main(){
-    int ip1, ip2;
+    int startunit, endunit, diff, rate, bill;
 
-    printf("\n Enter value for ip1 \t");
-    scanf("%d", &ip1);
-    printf("\n Enter value for ip2 \t");
-    scanf("%d", &ip2);
+    printf("\n Enter starting units \t");
+    scanf("%d", &startunit);
+    printf("\n Enter Ending units \t");
+    scanf("%d", &endunit);
 
-    printf("\n sum of ip1 and ip2 is %d", ip1 + ip2);
-    printf("\n sub of ip1 and ip2 is %d", ip1 - ip2);
-    printf("\n mul of ip1 and ip2 is %d", ip1 * ip2);
-    printf("\n div of ip1 and ip2 is %d", ip1 / ip2);
-    printf("\n mod of ip1 and ip2 is %d", ip1 % ip2);
+    diff = endunit - startunit;
+    printf("\n Total Consumpted units is %d", diff);
+    printf("\n Enter rate / unit \t");
+    scanf("%d", &rate);
+
+    bill = rate * diff;
+    printf("\n Payable bill is %d", bill);
 }
