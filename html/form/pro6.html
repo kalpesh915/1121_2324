@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <!-- check box in form-->
-    <form >
-       Select language:
-       <input type="checkbox" name="language"  value="Gujarati"checked>Gujarati
-       <input type="checkbox" name="language"  value="Hindi" checked>Hindi
-       <input type="checkbox" name="language"  value="English">English
+    <form>
+        <!-- Must set name of all the input fields in form -->
+        <label for="fn">Enter First Name :</label>
+        <input type="text" name="fname" id="fn"><br>
+        <label for="ln">Enter Last Name :</label>
+        <input type="text"  id="ln"><br>
+        <input type="submit" value="Send Data">
+        <input type="reset" value="Reset">
     </form>
 </body>
 </html>
