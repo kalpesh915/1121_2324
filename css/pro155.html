@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .header, .footer{
+            background-color: #cccccc;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .clearfix::after{
+            display: table;
+            clear: both;
+            content: "";
+        }
+
+        .column{
+            float: left;
+            padding: 15px;
+        }
+
+        .menu{
+            width: 25%;
+        }
+
+        .content{
+            width: 75%;
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        ul li{
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 5px 0px;
+        }
+
+        ul li:hover{
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header of Website</h1>
+    </div>
+
+    <div class="clearfix">
+        <div class="column menu">
+            <ul>
+                <li>Rajkot</li>
+                <li>Baroda</li>
+                <li>Surat</li>
+                <li>Bhuj</li>
+                <li>Ahamdabad</li>
+            </ul>
+        </div>
+        <div class="column content">
+            <h1>Content of Webpage</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quibusdam, explicabo dolores quo suscipit commodi dignissimos perferendis cumque, mollitia cum dolore sit, voluptatum esse! Illo, ipsum natus? Doloribus, eveniet ab!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quibusdam, explicabo dolores quo suscipit commodi dignissimos perferendis cumque, mollitia cum dolore sit, voluptatum esse! Illo, ipsum natus? Doloribus, eveniet ab!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quibusdam, explicabo dolores quo suscipit commodi dignissimos perferendis cumque, mollitia cum dolore sit, voluptatum esse! Illo, ipsum natus? Doloribus, eveniet ab!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quibusdam, explicabo dolores quo suscipit commodi dignissimos perferendis cumque, mollitia cum dolore sit, voluptatum esse! Illo, ipsum natus? Doloribus, eveniet ab!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quibusdam, explicabo dolores quo suscipit commodi dignissimos perferendis cumque, mollitia cum dolore sit, voluptatum esse! Illo, ipsum natus? Doloribus, eveniet ab!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer of Website</h2>
+    </div>
+</body>
+</html>
