@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            width: 200px;
+            background-color: #f3f3f3;
+        }
+
+        li a{
+            display: block;
+            color: #000000; 
+            padding: 8px 16px;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+
+        /* 
+            hover on li with not applied active class
+        */
+        li:not(.active):hover{
+            background-color: #cccccc;
+            color: white;
+        }
+
+        .active{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="active">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+    </ul>
+</body>
+</html>
