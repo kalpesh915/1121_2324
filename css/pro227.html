@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="email"], input[type="password"]{
+            width: 100px;
+            padding: 20px;
+            margin: 10px 0px;
+            box-sizing: border-box;
+            font-size: 22px;
+            /* below code for animation that we learn in next units */
+            transition: all 1s;
+        }
+
+        input[type="email"]:focus, input[type="password"]:focus{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="email">
+        <input type="password">
+        <input type="submit" value="Send Data">
+        <input type="reset">
+    </form>
+</body>
+</html>

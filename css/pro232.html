@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        input[type="email"], input[type="password"], select{
+            width: 100%;
+            margin: 8px 0px;
+            padding: 10px;
+        }
+
+        input[type="submit"], input[type="reset"]{
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            min-width: 120px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .col-25{
+            width: 25%;
+            float: left;
+        }
+
+        .col-75{
+            width: 75%;
+            float: left;
+        }
+
+        /* 
+            Code for responsive
+            resize column to 100% when screen is less than 700 px
+        */
+
+        @media screen and (max-width:700px){
+            .col-25, .col-75{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="col-25"><label for="email">Enter Email Address</label></div>
+        <div class="col-75"><input type="email" name="email" id="email"></div>
+        <div class="col-25"><label for="upass">Enter Password</label></div>
+        <div class="col-75"><input type="password" name="upass" id="upass"></div>
+        <div class="col-25"><label for="city">Select City</label></div>
+        <div class="col-75"><select name="city" id="city"></div>
+            <option>Rajkot</option>
+            <option>Baroda</option>
+            <option>Surat</option>
+            <option>Ahamdabad</option>
+        </select>
+        <input type="submit" value="Send Data">
+        <input type="reset">
+    </form>
+</body>
+</html>
