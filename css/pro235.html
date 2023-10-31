@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header, .footer{
+            background-color: grey;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            background-color: black;
+        }
+
+        .navbar li{
+            display: inline;
+        }
+
+        .navbar a{
+            display: inline-block;
+            padding: 8px 16px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .navbar a:hover{
+            background-color: gray;
+            color: black;
+        }
+
+        .content{
+            border: 1px solid black;
+        }
+
+        .content::after{
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        .column{
+            padding: 10px;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .col1, .col2, .col3{
+            width: 33.33%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Website Header</h1>
+    </div>
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="column col1">
+            <h1>Column 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet quidem reprehenderit, ipsa obcaecati tenetur molestias rem maxime est laudantium ullam voluptatibus, nisi, rerum eius illum odio. Debitis, officia totam.</p>
+        </div>
+        <div class="column col2">
+            <h1>Column 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet quidem reprehenderit, ipsa obcaecati tenetur molestias rem maxime est laudantium ullam voluptatibus, nisi, rerum eius illum odio. Debitis, officia totam.</p>
+        </div>
+        <div class="column col3">
+            <h1>Column 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eveniet quidem reprehenderit, ipsa obcaecati tenetur molestias rem maxime est laudantium ullam voluptatibus, nisi, rerum eius illum odio. Debitis, officia totam.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Website Footer</h2>
+    </div>
+</body>
+</html>
