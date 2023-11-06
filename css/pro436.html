@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .button1{
+            background-color: #f4511e;
+            display: inline-block;
+            border-radius: 4px;
+            border: none;
+            text-align: center;
+            color: white;font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            cursor: pointer;
+            margin: 5px;
+            box-shadow: 0px 10px gray;
+        }
+
+        .button1 span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button1:active{
+            transform: translateY(5px);
+            box-shadow: 0px 5px gray;
+        }
+    </style>
+</head>
+<body>
+    <button class="button1"><span>Press Me</span></button>
+</body>
+</html>

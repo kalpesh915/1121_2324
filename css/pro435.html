@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .button1{
+            background-color: #f4511e;
+            display: inline-block;
+            border-radius: 4px;
+            border: none;
+            text-align: center;
+            color: white;font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button1 span{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .button1 span::after{
+            content: "\00bb";
+            position: absolute;
+            top: 0px;
+            right: -20px;
+            transition: 0.5s;
+            opacity: 0;
+        }
+
+        .button1:hover span{
+            padding-right: 25px;
+        }
+
+        .button1:hover span::after{
+            right: 0px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <button class="button1"><span>Hover</span></button>
+</body>
+</html>
