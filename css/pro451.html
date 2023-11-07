@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            position: relative;
+        }
+
+        .menu{
+            float: left;
+            width: 25%;
+        }
+
+        .data{
+            float: left;
+            width: 75%;
+            padding: 20px;
+        }
+
+        .menu a{
+            display: block;
+            background-color: brown;
+            color: white;
+            padding: 20px;
+            margin: 10px 0px;
+        }
+
+        /*  Simple media rule 
+            following code get activated when screen size is less than 700px
+        */
+
+        @media screen and (max-width:700px){
+            .menu, .data{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+            <a href="#">Link 6</a>
+            <a href="#">Link 7</a>
+        </div>
+        <div class="data">
+            <h1>Simple Example of Responsive Page</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, voluptatem consequuntur mollitia porro cumque dolorum architecto accusamus harum ipsam numquam provident, neque eaque illo odit, dignissimos cum laborum fugiat quo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, voluptatem consequuntur mollitia porro cumque dolorum architecto accusamus harum ipsam numquam provident, neque eaque illo odit, dignissimos cum laborum fugiat quo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, voluptatem consequuntur mollitia porro cumque dolorum architecto accusamus harum ipsam numquam provident, neque eaque illo odit, dignissimos cum laborum fugiat quo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, voluptatem consequuntur mollitia porro cumque dolorum architecto accusamus harum ipsam numquam provident, neque eaque illo odit, dignissimos cum laborum fugiat quo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, voluptatem consequuntur mollitia porro cumque dolorum architecto accusamus harum ipsam numquam provident, neque eaque illo odit, dignissimos cum laborum fugiat quo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, voluptatem consequuntur mollitia porro cumque dolorum architecto accusamus harum ipsam numquam provident, neque eaque illo odit, dignissimos cum laborum fugiat quo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, voluptatem consequuntur mollitia porro cumque dolorum architecto accusamus harum ipsam numquam provident, neque eaque illo odit, dignissimos cum laborum fugiat quo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, voluptatem consequuntur mollitia porro cumque dolorum architecto accusamus harum ipsam numquam provident, neque eaque illo odit, dignissimos cum laborum fugiat quo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, voluptatem consequuntur mollitia porro cumque dolorum architecto accusamus harum ipsam numquam provident, neque eaque illo odit, dignissimos cum laborum fugiat quo.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .column{
+            width: 25%;
+            padding: 10px;
+            border: 1px solid black;
+            float: left;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+
+        /* Set only two columns when screen size is less than 900px */
+        @media screen and (max-width:900px){
+            .column{
+                width: 50%;
+            }
+        }
+
+        /* Set only one columns when screen size is less than 500px */
+        @media screen and (max-width:500px){
+            .column{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="column">1</div>
+    <div class="column">2</div>
+    <div class="column">3</div>
+    <div class="column">4</div>
+    <div class="column">5</div>
+    <div class="column">6</div>
+    <div class="column">7</div>
+    <div class="column">8</div>
+    <div class="column">9</div>
+    <div class="column">10</div>
+</body>
+</html>

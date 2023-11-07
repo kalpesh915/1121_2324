@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: tan;
+        }
+
+        /* 
+            this code is not proper because of order is incorrect while declare media rules
+            when you specify max-width always start with highest value and go for lowest values,
+            always set values in ascending order
+
+            700px is also less than 900px so always second rule with color blue is applied
+        */
+        
+        /* Screen size less than 700px */
+        @media screen and (max-width:700px){
+            body{
+                background-color: olive;
+            }
+        }
+
+        /* Screen size less than 900px */
+        @media screen and (max-width:900px){
+            body{
+                background-color: blue;
+            }
+        }
+
+        
+    </style>
+</head>
+<body onresize="getWidth()">
+    <h1 id="op"></h1>
+</body>
+</html>
+
+<script>
+    function getWidth(){
+        document.getElementById("op").innerHTML = screen.width;
+    }
+</script>
