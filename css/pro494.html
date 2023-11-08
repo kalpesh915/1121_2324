@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        .header, .footer{
+            background-color:gray;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar{
+            display: flex;
+            background-color: #333333;
+        }
+
+        .navbar a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover{
+            background-color: #dddddd;
+            color: black;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side{
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .data{
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .fakeimg{
+            margin: 5px 0px;
+            background-color: #aaaaaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        @media screen and (min-width:1200px){
+            .side{
+                flex:20%;
+            }
+
+            .data{
+                flex:80%;
+            }
+        }
+
+
+        @media screen and (max-width:800px){
+            .navbar, .row{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Website Header</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </nav>
+
+    <main class="row">
+        <aside class="side">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti earum at dignissimos iusto animi fugit doloribus, ut officiis veritatis assumenda sequi ipsam qui fuga reprehenderit. Doloremque velit culpa soluta laboriosam.</p>
+
+            <div class="fakeimg" style="height: 200px;">Image 1</div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus libero, incidunt recusandae tempore possimus. Quos nostrum dolorum est perspiciatis inventore hic consequatur, soluta iure eveniet eum earum officia in?</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus placeat quod dignissimos amet, provident explicabo libero eum possimus deleniti blanditiis alias pariatur culpa obcaecati fugit dolore, officiis voluptatem doloribus ex.</p>
+
+            <div class="fakeimg" style="height: 100px;">Image 1</div>
+            <div class="fakeimg" style="height: 100px;">Image 1</div>
+            <div class="fakeimg" style="height: 100px;">Image 1</div>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id voluptates maxime reiciendis enim facilis impedit laudantium. Sed aliquam maxime ipsa. Enim quam sit fugiat porro sequi adipisci ullam vitae deleniti!</p>
+        </aside>
+
+        <section class="data">
+            <h1>Main Content of Webpage</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, obcaecati architecto libero odio ad modi aperiam alias consequatur eligendi iure perferendis est, repudiandae blanditiis iste error nulla eaque quibusdam asperiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, obcaecati architecto libero odio ad modi aperiam alias consequatur eligendi iure perferendis est, repudiandae blanditiis iste error nulla eaque quibusdam asperiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, obcaecati architecto libero odio ad modi aperiam alias consequatur eligendi iure perferendis est, repudiandae blanditiis iste error nulla eaque quibusdam asperiores!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, obcaecati architecto libero odio ad modi aperiam alias consequatur eligendi iure perferendis est, repudiandae blanditiis iste error nulla eaque quibusdam asperiores!</p>
+            <div class="fakeimg" style="height: 100px;"></div>
+            <div class="fakeimg" style="height: 100px;"></div>
+            <div class="fakeimg" style="height: 100px;"></div>
+            <div class="fakeimg" style="height: 100px;"></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum iusto, modi officia deserunt perspiciatis, doloremque hic sapiente eligendi similique porro, soluta dignissimos magni quam ab atque non sunt sequi sit.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, delectus tenetur. Dolorem modi quaerat esse ut cumque repellendus fugit, sed tempore nulla culpa nostrum possimus odio, sunt soluta hic dolorum?</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3>Responsive website with flexbox technology</h3>
+    </footer>
+</body>
+</html>
