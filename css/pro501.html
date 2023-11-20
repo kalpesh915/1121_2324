@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        [class*="col-"]{
+            width: 100%;
+            padding: 10px;
+            float: left;
+        }
+
+        /* code for screen size greater than 768px */
+        @media screen and (min-width:768px){
+            .col-1{
+                width: 8.33%;
+            }
+            .col-2{
+                width: 16.66%;
+            }
+            .col-3{
+                width: 25%;
+            }
+            .col-4{
+                width: 33.33%;
+            }
+            .col-5{
+                width: 41.66%;
+            }
+            .col-6{
+                width: 50%;
+            }
+            .col-7{
+                width: 58.33%;
+            }
+            .col-8{
+                width: 66.66%;
+            }
+            .col-9{
+                width: 75%;
+            }
+            .col-10{
+                width: 83.33%;
+            }
+            .col-11{
+                width: 91.66%;
+            }
+            .col-12{
+                width: 100%;
+            }
+        }
+
+        .row::after{
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        .header, .footer{
+            background-color: purple;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="col-12 header">
+        <h1>This is header of website</h1>
+    </header>
+
+    <div class="row">
+        <div class="col-3">
+            <h1>Side Bar 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam voluptatum doloribus, illum quo nulla, repellendus odio commodi dolores dicta explicabo! Perspiciatis dignissimos deserunt nulla ex asperiores quae omnis ducimus?</p>
+        </div>
+        <div class="col-6">
+            <h1>Main Data</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam voluptatum doloribus, illum quo nulla, repellendus odio commodi dolores dicta explicabo! Perspiciatis dignissimos deserunt nulla ex asperiores quae omnis ducimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam voluptatum doloribus, illum quo nulla, repellendus odio commodi dolores dicta explicabo! Perspiciatis dignissimos deserunt nulla ex asperiores quae omnis ducimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam voluptatum doloribus, illum quo nulla, repellendus odio commodi dolores dicta explicabo! Perspiciatis dignissimos deserunt nulla ex asperiores quae omnis ducimus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam voluptatum doloribus, illum quo nulla, repellendus odio commodi dolores dicta explicabo! Perspiciatis dignissimos deserunt nulla ex asperiores quae omnis ducimus?</p>
+        </div>
+        <div class="col-3">
+            <h1>Side Bar 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam voluptatum doloribus, illum quo nulla, repellendus odio commodi dolores dicta explicabo! Perspiciatis dignissimos deserunt nulla ex asperiores quae omnis ducimus?</p>
+        </div>
+    </div>
+
+    <footer class="col-12 footer">
+        <h2>Website Footer</h2>
+    </footer>
+</body>
+</html>
