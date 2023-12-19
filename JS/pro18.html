@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select onchange="changeFont(this.value)">
+        <option>10</option>
+        <option>15</option>
+        <option>20</option>
+        <option>25</option>
+        <option>30</option>
+        <option>35</option>
+        <option>40</option>
+        <option>45</option>
+        <option>50</option>
+    </select>
+    <hr>
+    <p id="op">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos placeat fugiat nesciunt quibusdam sed ipsam ratione esse a, incidunt suscipit hic facere cum minima dolor. Praesentium atque iusto porro consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestiae nisi error quae minus impedit! Nisi minus unde corrupti quo, tempora et accusantium neque velit error. Odio fugit eum esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorum error amet eaque, eos illum quo a laboriosam fugiat debitis, accusamus praesentium veritatis cum tempore distinctio, aspernatur incidunt omnis enim. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum pariatur, corporis minus atque nam sint, iure modi aspernatur maiores id velit ratione nisi quaerat voluptatum eligendi magnam optio doloribus earum.</p>
+</body>
+</html>
+
+<script>
+    function changeFont(size){
+        document.getElementById("op").style.fontSize = size+"px";
+    }
+</script>
