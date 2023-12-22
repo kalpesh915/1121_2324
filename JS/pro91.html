@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        when we declare function in objects its known as method
+    */
+    let student = {
+
+        "roll" : 123,
+        "fname" : "Meet",
+        "lname" : "Sinojiya",
+        "city" : "Rajkot",
+        "getFullName" : function(){
+            /*
+                In JavaScript, the this keyword refers to an object.
+                Which object depends on how this is being invoked (used or called).
+            */ 
+            alert(this.fname+" "+this.lname);
+        }
+    }
+
+    student.getFullName();
+</script>

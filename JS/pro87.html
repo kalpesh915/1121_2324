@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*  Local Variables
+        Variables declared within a JavaScript function, become LOCAL to the function.
+        Local variables can only be accessed from within the function.
+    */
+
+    function greetings() {
+        var fname = "Meet"; /// local
+        document.write("<hr> Welcome "+fname);
+    }
+
+    greetings();
+    document.write("<hr> outside of function Welcome "+fname);
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body onmousemove="getCoord(event)">
+    <h1 id="op"></h1>
+    <img src="images/pic_bulbon.gif" id="bulb">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptate nam amet facere officia, dicta illo, distinctio alias cumque dolorem temporibus officiis vitae harum dolor aut quae dignissimos soluta sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis quis quam impedit. Aliquam, veritatis laboriosam. Consequatur eius veniam suscipit hic, accusantium incidunt asperiores sequi quibusdam ab laudantium quasi quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vitae aliquam quo nam, mollitia excepturi, aperiam, possimus atque qui asperiores tempore odit quae sunt nulla molestias? Aperiam tenetur unde voluptatum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptate nam amet facere officia, dicta illo, distinctio alias cumque dolorem temporibus officiis vitae harum dolor aut quae dignissimos soluta sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis quis quam impedit. Aliquam, veritatis laboriosam. Consequatur eius veniam suscipit hic, accusantium incidunt asperiores sequi quibusdam ab laudantium quasi quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vitae aliquam quo nam, mollitia excepturi, aperiam, possimus atque qui asperiores tempore odit quae sunt nulla molestias? Aperiam tenetur unde voluptatum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptate nam amet facere officia, dicta illo, distinctio alias cumque dolorem temporibus officiis vitae harum dolor aut quae dignissimos soluta sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis quis quam impedit. Aliquam, veritatis laboriosam. Consequatur eius veniam suscipit hic, accusantium incidunt asperiores sequi quibusdam ab laudantium quasi quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vitae aliquam quo nam, mollitia excepturi, aperiam, possimus atque qui asperiores tempore odit quae sunt nulla molestias? Aperiam tenetur unde voluptatum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptate nam amet facere officia, dicta illo, distinctio alias cumque dolorem temporibus officiis vitae harum dolor aut quae dignissimos soluta sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis quis quam impedit. Aliquam, veritatis laboriosam. Consequatur eius veniam suscipit hic, accusantium incidunt asperiores sequi quibusdam ab laudantium quasi quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vitae aliquam quo nam, mollitia excepturi, aperiam, possimus atque qui asperiores tempore odit quae sunt nulla molestias? Aperiam tenetur unde voluptatum.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptate nam amet facere officia, dicta illo, distinctio alias cumque dolorem temporibus officiis vitae harum dolor aut quae dignissimos soluta sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis quis quam impedit. Aliquam, veritatis laboriosam. Consequatur eius veniam suscipit hic, accusantium incidunt asperiores sequi quibusdam ab laudantium quasi quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vitae aliquam quo nam, mollitia excepturi, aperiam, possimus atque qui asperiores tempore odit quae sunt nulla molestias? Aperiam tenetur unde voluptatum.</p>
+</body>
+
+</html>
+
+<script>
+    function getCoord(e){
+        document.getElementById("bulb").style.left = e.clientX+"px";
+        document.getElementById("bulb").style.top = e.clientY+"px";
+    }
+</script>
