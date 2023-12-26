@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    /*
+        This format stores numbers in 64 bits, where the number (the fraction) is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign in bit 63:
+        Value (aka Fraction/Mantissa) 	Exponent 	        Sign
+        52 bits (0 - 51)  	            11 bits (52 - 62) 	1 bit (63)
+    */
+
+   let ip1 = 999999999999999;
+   document.write("<hr> ip1 is "+ip1);
+   ip1 = 9999999999999999;
+   document.write("<hr> ip1 is "+ip1);
+   ip1 = 9999999999999999n; // big int
+   document.write("<hr> ip1 is "+ip1);
+   ip1 = 9999999999999999999999n; // big int
+   document.write("<hr> ip1 is "+ip1);
+   ip1 = BigInt("9999999999999999"); // big int
+   document.write("<hr> ip1 is "+ip1);
+</script>

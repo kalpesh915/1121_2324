@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" onkeyup="convert(this.value)">
+    <hr>
+    <p id="binary"></p>
+    <p id="octal"></p>
+    <p id="decimal"></p>
+    <p id="hex"></p>
+    <hr>
+</body>
+
+</html>
+
+<script>
+    function convert(value){
+        value = Number(value);
+        document.getElementById("binary").innerHTML = value.toString(2);
+        document.getElementById("octal").innerHTML = value.toString(8);
+        document.getElementById("decimal").innerHTML = value.toString(10);
+        document.getElementById("hex").innerHTML = value.toString(16);
+    }
+</script>
