@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<script>
+
+    const values = [11, 22, 21, 98, 110, 1234, 1098, 764, 345, 567, 9];
+    
+    document.write("<hr> Original Array : "+values);    
+    document.write("<hr> Sorted Array : "+values.sort(function(ip1, ip2) {return ip1 - ip2}));
+    document.write("<hr> Sorted Array : "+values.sort(function(ip1, ip2) {return 0.5 - Math.random()}));
+</script>

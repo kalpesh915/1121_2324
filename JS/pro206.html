@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<script>
+    const data = [11, 34, 32, 21, 45, 56, 67, 78, 54, 78, 56, 89, 98, 56, 78];
+
+    /*
+        JavaScript Array map()
+        The map() method creates a new array by performing a function on each array element.
+        The map() method does not execute the function for array elements without values.
+        The map() method does not change the original array.
+    */ 
+    
+    document.write("<hr> Original Array is "+data);
+    let ans = data.map(printer);
+
+    function printer(value){
+        return value * 2;
+    }
+
+    document.write("<hr> Answer is "+ans);
+</script>

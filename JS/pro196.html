@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<script>
+    /*
+        Numeric Sort
+        You can fix this by providing a compare function:
+
+        When the sort() function compares two values, it sends the values to the compare function, and sorts the values according to the returned (negative, zero, positive) value.
+
+        If the result is negative, a is sorted before b.
+        If the result is positive, b is sorted before a.
+        If the result is 0, no changes are done with the sort order of the two values.
+
+        ip1     ip2     return      ans 
+        11      22      11 - 22     -ve
+        22      21      22 - 21     +ve
+        22      22      22 - 22     0
+    */ 
+
+    const values = [11, 22, 21, 98, 110, 1234, 1098, 764, 345, 567, 9];
+    
+    document.write("<hr> Original Array : "+values);    
+    document.write("<hr> Sorted Array : "+values.sort(function(ip1, ip2) {return ip1 - ip2}));
+    document.write("<hr> Sorted Array : "+values.sort(function(ip1, ip2) {return ip2 - ip1}));
+</script>
