@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<script>
+    
+    let ip1, ans;
+
+    ip1 = new Date().getDay();
+    switch(ip1){
+        case 0:{
+            ans = "Sunday";
+        }
+        case 1:{
+            ans = "Monday";
+        }
+        case 2:{
+            ans = "Tuesday";
+        }
+        case 3:{
+            ans = "Wednesday";
+        }
+        case 4:{
+            ans = "Thursday";
+        }
+        case 5:{
+            ans = "Friday";
+        }
+        case 6:{
+            ans = "Saturday";
+        }
+        default:{
+            ans = "Out of Range";
+        }
+    }
+
+    document.write("<hr>"+ans);
+
+</script>
