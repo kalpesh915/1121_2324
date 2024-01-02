@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<script>
+    /*
+        print following pattern with for loop (nested for loop)
+
+        1
+        22
+        333
+        4444
+        55555
+    */
+
+    // outer
+    for (let x = 1; x <= 5; x++) {
+        // inner
+        for (let y = 1; y <= x; y++) {
+            document.write(""+x);
+        }
+        document.write("<br>");
+    }
+</script>
