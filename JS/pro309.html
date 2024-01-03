@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<script>
+    /*
+        count how many digits in entered number with use of while loop
+    */
+
+    let ip1 = Number(prompt("Enter any value "));
+    let ans = 0;
+
+    while(ip1 > 0){
+        ans++;
+        ip1 = parseInt(ip1 / 10);
+    }
+
+    document.write("<hr> Answer is "+ans);
+</script>
