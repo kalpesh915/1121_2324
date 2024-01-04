@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<script>
+    /*
+        A Map holds key-value pairs where the keys can be any datatype.
+        A Map remembers the original insertion order of the keys.
+    */
+
+    const students = new Map([
+        [1, "Meet"],
+        [2, "Brijesh"],
+        [3, "Ansh"],
+        [4, "Alan"],
+        [5, "Krishil"]
+    ]);
+
+    students.forEach(printer);
+
+    function printer(key, value){
+        document.write("<hr> Welcome "+value+" roll No. is "+key);
+    }
+</script>

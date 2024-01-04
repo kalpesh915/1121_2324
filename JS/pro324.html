@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<script>
+    /*
+        A JavaScript Set is a collection of unique values.
+        Each value can only occur once in a Set.
+    */
+
+    const city = new Set(["Rajkot", "Surat", "Ahamdabad"]);
+
+    document.write("<hr> Length of set is "+city.size);
+    document.write("<hr> Length of set is "+city.has("Surat"));
+    city.delete("surat"); // surat not is Surat
+    document.write("<hr> Length of set is "+city.has("Surat"));
+</script>
