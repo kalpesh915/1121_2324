@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    function div(ip1, ip2){
+        if(ip2 == 0){
+            throw "Division is Not Possible";
+        }else{
+            document.write("<hr> Division is "+(ip1 / ip2));
+        }
+    }
+
+
+    let x = Number(prompt("Enter value for x "));
+    let y = Number(prompt("Enter value for y "));
+
+    try{
+        div(x, y);
+    }catch(error){
+        document.write("<hr> Error is "+error);
+    }
+    
+</script>
