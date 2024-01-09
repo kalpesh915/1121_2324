@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        Class Methods
+        Class methods are created with the same syntax as object methods. Use the keyword class to create a class. Always add a constructor() method. Then add any number of methods.
+    */
+
+    class Student{
+        constructor(roll, fname, lname){
+            this.roll = roll;
+            this.fname = fname;
+            this.lname = lname;
+        }
+
+        getData(){
+            document.write("<hr>"+this.fname+" "+this.lname+" "+this.roll);
+        }
+    }
+
+    const std1 = new Student(111, "Meet", "Sinojiya");
+    const std2 = new Student(112, "Brijesh", "Maitra");
+    const std3 = new Student(113, "Ansh", "Amrutiya");
+
+    std1.getData();
+    std2.getData();
+    std3.getData();
+</script>

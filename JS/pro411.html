@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    const student = {
+        roll : 123,
+        fname : "Meet",
+        lname : "Sinojiya",
+        city : "Rajkot",
+        getData : function(){
+            // find fname, lname, city as local varibles of getData()
+            fname = "Krishil";
+            lname = "Trivedi";
+            city = "Rajkot";
+            return fname + " "+lname+" "+city;
+        }
+    };
+
+    //document.write(student);
+    document.write(student.getData());
+</script>
