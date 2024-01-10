@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*    
+        Data is in name/value pairs
+        Data is separated by commas
+        Curly braces hold objects
+        Square brackets hold arrays
+    */
+
+    const myObjects = {"students":[
+                { "roll": 123, "fname": "Meet", "lname": "Sinojiya", "city": "Rajkot" }, 
+                { "roll": 124, "fname": "Ansh", "lname": "Amrutiya", "city": "Rajkot" }, 
+                { "roll": 125, "fname": "Brijesh", "lname": "Miatra", "city": "Rajkot" }, 
+                { "roll": 126, "fname": "Krishil", "lname": "Trivedi", "city": "Rajkot" }
+        ]};
+
+    document.write("<hr>" + myObjects);
+    document.write("<hr>" + myObjects.students);
+    document.write("<hr>" + myObjects.students[0]);
+    document.write("<hr>" + myObjects.students[0].fname);
+
+    // Convert JavaScript Objects to JSON String
+    const myJsonData = JSON.stringify(myObjects);
+
+    document.write("<hr>"+myJsonData);
+</script>
