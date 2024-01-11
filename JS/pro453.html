@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        JavaScript for...in Loop
+        The JavaScript for...in statement loops through the properties of an object.
+    */
+
+    const student = {
+        roll: 123,
+        fname: "Ansh",
+        lname: "Amrutiya",
+        city: "Rajkot"
+    };
+
+    // add new property to object
+
+    student["nationlity"] = "Indian";
+
+    for(let x in student){
+        // document.write("<hr>"+x);
+        document.write("<hr>"+student[x]);
+    }
+</script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        JavaScript for...in Loop
+        The JavaScript for...in statement loops through the properties of an object.
+    */
+
+    const student = {
+        roll: 123,
+        fname: "Ansh",
+        lname: "Amrutiya",
+        city: "Rajkot",
+        marks: [
+            { "sub1": 45 },
+            { "sub2": 85 },
+            { "sub3": 64 }
+        ]
+    };
+
+
+    // add method to object after creation of student object
+
+    student.getData = function () {
+        //return "<hr>" + this.fname + " " + this.lname + " " + this.roll;
+        return "<hr>" + this.fname.toUpperCase() + " " + this.lname.toUpperCase() + " " + this.roll;
+    }
+
+    document.write(student.getData());
+</script>

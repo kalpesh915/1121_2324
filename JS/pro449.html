@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        Using the JavaScript Keyword new The following example create a new JavaScript object using new Object(), and then adds 4 properties:
+    */
+
+    const student = new Object();
+
+    student.roll = 123;
+    student.fname = "Ansh";
+    student.lname = "Amrutiya";
+    student.city = "Rajkot";
+    student.getData = function () {
+        return this.fname + " " + this.lname + " " + this.roll + " " + this.city;
+    }
+
+    document.write("<hr>" + student.getData());
+
+</script>
