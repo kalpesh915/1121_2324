@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+       create an object
+    */
+    let person = {};
+
+    const obj1 = Object.create(person);
+    console.log(obj1);
+
+    Object.defineProperty(obj1, "fname", {
+        value : "Meet Sinojiya"
+    });
+
+    console.log(obj1);
+
+    console.log(Object.getOwnPropertyDescriptor(obj1, "fname"));
+
+    console.log(Object.getOwnPropertyNames(obj1));
+
+    console.log(Object.getPrototypeOf(obj1));
+
+    console.log(Object.keys(obj1));
+</script>

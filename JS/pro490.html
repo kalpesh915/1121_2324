@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+       create an object
+    */
+    let person = {
+        fname : "Meet",
+        lname : "Sinojiya"
+    };
+
+    console.log(person.fname);
+    Object.defineProperty(person, "fname", { value : "MEET", writable: false, enumerable : false});
+    console.log(Object.getOwnPropertyNames(person));
+    console.log(Object.keys(person));
+</script>

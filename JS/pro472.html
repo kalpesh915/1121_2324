@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        JavaScript Object Constructors
+    */
+
+    function Student(roll, fname, lname, city) {
+        this.roll = roll;
+        this.fname = fname;
+        this.lname = lname;
+        this.city = city;
+        this.nationality = "Indian";
+        this.getData = function () {
+            return this.fname + " " + this.lname;
+        }
+    }
+
+    const student1 = new Student(121, "Meet", "Sinojiya", "Rajkot");
+    const student2 = new Student(122, "Ansh", "Anrutiya", "Rajkot");
+    const student3 = new Student(123, "Krishil", "Trivedi", "Rajkot");
+    const student4 = new Student(124, "Sunny", "Sata", "Rajkot");
+
+    document.write("<hr>" + JSON.stringify(student1));
+    document.write("<hr>" + JSON.stringify(student2));
+    document.write("<hr>" + JSON.stringify(student3));
+    document.write("<hr>" + JSON.stringify(student4));
+
+    document.write("<hr>" + student1.getData());
+    document.write("<hr>" + student2.getData());
+
+</script>
