@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        Function Parameters and Arguments
+        Earlier in this tutorial, you learned that functions can have parameters:
+
+        function functionName(parameter1, parameter2, parameter3) {
+            // code to be executed
+        }
+
+        functionName(11, 22, 33); // 11, 22, 33 function arguments
+    */
+
+    function makeSum(x, y){ // x, y parameters
+        document.write("<hr>Sum is : "+(x+y));
+    }
+
+    makeSum(11, 22); // 11, 22 arguments
+
+    /*
+        Function parameters are the names listed in the function definition.
+        Function arguments are the real values passed to (and received by) the function.
+
+        Parameter Rules
+        JavaScript function definitions do not specify data types for parameters. JavaScript functions do not perform type checking on the passed arguments. JavaScript functions do not check the number of arguments received.
+    */ 
+</script>

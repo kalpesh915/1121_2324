@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /* 1 function defination */
+
+    /*function findCube(x) {
+        return x * x * x;
+    }*/
+
+    /* 2 function Expressions*/
+
+    //const findCube = function(x) {return x * x * x; };
+
+    /* 3 function constructor */
+    //let findCube = new Function("x", "return x * x * x;");
+
+    /* 4 arrow function */
+    let findCube = (x) => x * x * x;
+
+    document.write("<hr>"+findCube(5));
+</script>
