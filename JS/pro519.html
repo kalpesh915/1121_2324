@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        The JavaScript call() Method
+        The call() method is a predefined JavaScript method.
+        It can be used to invoke (call) a method with an owner object as an argument (parameter).
+    */
+
+    let person = {
+        fname : "Sunny",
+        lname : "Sata",
+        getFullName : function(){
+            return this.fname+" "+this.lname;
+        }
+    };
+
+    
+    let person1 = {
+        fname: "Krishil",
+        lname: "Trivedi"
+    };
+
+    let person2 = {
+        fname: "Pooja",
+        lname: "Mori"
+    };
+
+    let person3 = {
+        fname: "Sanjana",
+        lname: "Sonagra"
+    };
+
+    document.write("<hr> "+person.getFullName());
+    document.write("<hr> "+person.getFullName.call(person1));
+    document.write("<hr> "+person.getFullName.call(person2));
+    document.write("<hr> "+person.getFullName.call(person3));
+</script>

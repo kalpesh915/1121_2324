@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        Method Reuse
+        With the apply() method, you can write a method that can be used on different objects.The JavaScript apply() Method The apply() method is similar to the call() method (previous chapter).
+
+        The Difference Between call() and apply() The difference is:
+        The call() method takes arguments separately. The apply() method takes arguments as an array.
+    */
+
+    let person = {
+        fname : "Sunny",
+        lname : "Sata",
+        getFullName : function(city, state){
+            return this.fname+" "+this.lname+" "+city+ " "+state;
+        }
+    };
+
+    
+    let person1 = {
+        fname: "Krishil",
+        lname: "Trivedi"
+    };
+
+    let person2 = {
+        fname: "Pooja",
+        lname: "Mori"
+    };
+
+    let person3 = {
+        fname: "Sanjana",
+        lname: "Sonagra"
+    };
+
+    document.write("<hr> "+person.getFullName("Rajkot", "Gujarat"));
+    document.write("<hr> "+person.getFullName.apply(person1, ["Jetpur", "Gujarat"]));
+    document.write("<hr> "+person.getFullName.apply(person2, ["Morbi", "Gujarat"]));
+    document.write("<hr> "+person.getFullName.apply(person3, ["Surat", "Gujarat"]));
+</script>

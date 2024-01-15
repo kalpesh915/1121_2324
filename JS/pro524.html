@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        Preserving this Sometimes the bind() method has to be used to prevent losing this.
+    */
+    let op = document.getElementById("op");
+    const person = {
+        firstName : "Sunny",
+        lastName : "Sata",
+        fullName : function(){
+            op.innerHTML = this.firstName+" "+this.lastName;
+        }
+    }
+
+    
+    // person.fullName();
+    //setTimeout(person.fullName, 5000);
+    // When a function is used as a callback, this is lost.
+    let fn1 = person.fullName.bind(person);
+
+    setTimeout(fn1, 5000);
+</script>
