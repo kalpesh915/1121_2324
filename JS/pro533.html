@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    // parent class
+    class MyMaths1{
+        sum(i, j) {
+            document.write("<hr> Sum is "+(i+j));
+        }
+        sub(i, j) {
+            document.write("<hr> Sub is "+(i-j));
+        }
+    }
+
+    // child class
+    // MyMaths1 class extended to MyMaths2
+    class MyMaths2 extends MyMaths1{
+        mul(i, j) {
+            document.write("<hr> Mul is "+(i*j));
+        }
+        div(i, j) {
+            document.write("<hr> Div is "+(i/j));
+        }
+    }
+
+    const m2 = new MyMaths2();
+
+    m2.sum(111, 22);
+    m2.sub(111, 22);
+    m2.mul(111, 22);
+    m2.div(111, 22);
+</script>
