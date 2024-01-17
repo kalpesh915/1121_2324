@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="op"></div>
+</body>
+
+</html>
+
+<script>
+
+    let myPromise = new Promise(function (resolve, reject) {
+        const XMLHttp = new XMLHttpRequest();
+        XMLHttp.open("GET", "data.txt");
+
+        XMLHttp.onload = function () {
+            if (XMLHttp.status == 200) {
+                resolve(XMLHttp.responseText);
+            } else {
+                reject("Something wrong when file loading");
+            }
+        }
+
+        XMLHttp.send();
+    });
+    
+    function printer(data){
+        document.getElementById("op").innerHTML = data;
+    }
+
+    myPromise.then(function(data){
+        printer(data);
+    }, function(error){
+        printer(error);
+    });
+</script>

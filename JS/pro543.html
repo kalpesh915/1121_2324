@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        "I will finish later!"
+        Functions running in parallel with other functions are called asynchronous A good example is JavaScript setTimeout()
+    */
+
+    function printer(){
+        document.getElementById("op").innerHTML = Date();
+    }
+
+    setTimeout(printer, 5000); // return date after 5 seconds
+</script>

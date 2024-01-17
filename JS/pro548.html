@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="op"></div>
+</body>
+
+</html>
+
+<script>
+    function loadFile(){
+        // AJAX = Asynchonus Java Script and XML
+        // load data without page refresh
+
+        const XMLHttp = new XMLHttpRequest();
+        XMLHttp.open("GET", "data.txt");
+
+        XMLHttp.onload = function(){
+            if(XMLHttp.status == 200){
+                document.getElementById("op").innerHTML = XMLHttp.responseText;
+            }else{
+                document.getElementById("op").innerHTML = "Something wrong when file loading";
+            }
+        }
+
+        XMLHttp.send();
+    }
+
+    loadFile();
+</script>

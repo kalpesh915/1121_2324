@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        remove negative numbers from array
+    */
+
+    let data = [11, 22, -34, 43, -31, -89, -96, 91, -90];
+    
+    let answer = removeNegative(data, (x)=> x >= 0);
+
+    document.write(answer);
+
+    function removeNegative(values, callback){
+        let finalData = [];
+
+        for(let x of values){
+            if(callback(x)){
+                finalData.push(x);
+            }
+        }
+
+        return finalData;
+    }
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="op"></div>
+</body>
+
+</html>
+
+<script>
+    /*
+        "async and await make promises easier to write" async makes a function return a Promise await makes a function wait for a Promise
+    */ 
+
+    async function getCurrentDate(){
+        return Date();
+    }
+
+    //document.write(getCurrentDate());
+
+    function printer(data){
+        document.getElementById("op").innerHTML = data;
+    }
+
+    getCurrentDate().then(function(data){
+        printer(data);
+    }, function(err){
+        printer(err);
+    });
+</script>
