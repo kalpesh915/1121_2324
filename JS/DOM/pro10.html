@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+    <style>
+        .color1{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste enim aspernatur maxime laudantium iusto excepturi harum dicta quasi, commodi suscipit atque dolorem vero recusandae dolorum. Praesentium sint iste sed earum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, deleniti veniam esse vero sapiente voluptatem magnam, aliquam accusantium minima quidem fugit minus ullam quia. Sed itaque accusamus culpa iste ea.</p>
+
+    <div style="border: 1px solid black; padding: 20px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste enim aspernatur maxime laudantium iusto excepturi harum dicta quasi, commodi suscipit atque dolorem vero recusandae dolorum. Praesentium sint iste sed earum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, deleniti veniam esse vero sapiente voluptatem magnam, aliquam accusantium minima quidem fugit minus ullam quia. Sed itaque accusamus culpa iste ea.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste enim aspernatur maxime laudantium iusto excepturi harum dicta quasi, commodi suscipit atque dolorem vero recusandae dolorum. Praesentium sint iste sed earum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, deleniti veniam esse vero sapiente voluptatem magnam, aliquam accusantium minima quidem fugit minus ullam quia. Sed itaque accusamus culpa iste ea.</p>
+
+</body>
+</html>
+
+<script>
+    let ptags = document.getElementsByTagName("p");
+    for(p of ptags){
+        p.style.color = "orangered";
+    }
+</script>

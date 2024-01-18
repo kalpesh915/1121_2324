@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+    <style>
+        .color1{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p class="color1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas ipsam voluptatum a nostrum. Magni nostrum eum corrupti eos tempore pariatur dicta, dolore, repellendus facilis aliquam saepe ad, eligendi autem!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas ipsam voluptatum a nostrum. Magni nostrum eum corrupti eos tempore pariatur dicta, dolore, repellendus facilis aliquam saepe ad, eligendi autem!</p>
+    <p class="color1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas ipsam voluptatum a nostrum. Magni nostrum eum corrupti eos tempore pariatur dicta, dolore, repellendus facilis aliquam saepe ad, eligendi autem!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas ipsam voluptatum a nostrum. Magni nostrum eum corrupti eos tempore pariatur dicta, dolore, repellendus facilis aliquam saepe ad, eligendi autem!</p>
+    <p class="color1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas ipsam voluptatum a nostrum. Magni nostrum eum corrupti eos tempore pariatur dicta, dolore, repellendus facilis aliquam saepe ad, eligendi autem!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas ipsam voluptatum a nostrum. Magni nostrum eum corrupti eos tempore pariatur dicta, dolore, repellendus facilis aliquam saepe ad, eligendi autem!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas ipsam voluptatum a nostrum. Magni nostrum eum corrupti eos tempore pariatur dicta, dolore, repellendus facilis aliquam saepe ad, eligendi autem!</p>
+    <h1 class="color1">Another Text</h1>
+</body>
+</html>
+
+<script>
+    //let ptags = document.getElementsByClassName("color1");
+    let ptags = document.querySelectorAll("p.color1");
+    for(p of ptags){
+        p.style.color = "orangered";
+    }
+</script>

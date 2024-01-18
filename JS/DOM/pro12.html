@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+    <style>
+        .color1{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com" id="link1">Click Me</a>
+    <br>
+    <button onclick="setnews()">News</button>
+    <button onclick="setgoogle()">Google</button>
+</body>
+</html>
+
+<script>
+    function setnews(){
+        document.getElementById("link1").href="https://www.divyabhaskar.com";
+    }
+
+    function setgoogle(){
+        document.getElementById("link1").href="https://www.google.com";
+    }
+</script>
