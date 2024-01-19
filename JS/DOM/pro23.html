@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+</head>
+
+<body>
+    <h1 id="op">Welcome to world of Animation with Java Script</h1>
+    <hr>
+    <button onclick="startAnimation()">Start Animation</button>
+    <button onclick="stopAnimation()">Stop Animation</button>
+</body>
+
+</html>
+
+<script>
+    let h1 = document.getElementById("op");
+    let animation = null;
+
+    let count = 0;
+    function changeColor(){
+        h1.innerHTML = count;
+        count++;
+    }
+
+    function startAnimation(){
+        if(animation == null){
+            animation = setInterval(changeColor, 100);
+        }
+    }
+
+    function stopAnimation(){
+        if(animation != null){
+            clearInterval(animation); // kill the running animation
+            animation = null;
+        }
+    }
+    
+</script>

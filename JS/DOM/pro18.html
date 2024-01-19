@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+</head>
+
+<body>
+    <form id="myform" name="myform" onsubmit="return validateForm()">
+        <input type="text" name="qun" id="qun" placeholder="Enter Quantity">
+        <!-- <input type="number" max="10" min="1" required> -->
+        <input type="submit" value="Send Data">
+    </form>
+</body>
+
+</html>
+
+<script>
+    function validateForm(){
+        let quantity = document.forms["myform"]["qun"].value;
+        if(quantity == ""){
+            alert("Please Enter Quantity");
+            return false;
+        }else{
+            if(isNaN(quantity)){
+                alert("Invalid Number");
+                return false;
+            }else{
+                if(quantity >= 1 && quantity <= 10){
+                    return true;
+                }else{
+                    alert("Must Enter Quantity between 1 to 1o");
+                    return false;
+                }
+            }
+        }
+    }
+</script>

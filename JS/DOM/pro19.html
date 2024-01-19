@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+</head>
+
+<body>
+    <p id="op">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem odio aliquam vel enim corporis labore nam assumenda perspiciatis possimus, quis inventore deleniti nobis recusandae. Eos earum ullam dicta corporis quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolorum officia aut eius. Facere quaerat fugit beatae nihil, modi, at non dolores sit aperiam assumenda suscipit provident eaque laudantium magni!</p>
+
+    <br>
+    <select onchange="setFontColor(this.value)">
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Black</option>
+        <option>Purple</option>
+        <option>Pink</option>
+        <option>Gray</option>
+        <option>Cyan</option>
+    </select>
+</body>
+
+</html>
+
+<script>
+    function setFontColor(colorvalue){
+        document.getElementById("op").style.color = colorvalue;
+    }
+</script>
