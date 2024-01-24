@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+</body>
+
+</html>
+
+<script>
+
+    /*
+        The HTMLCollection Object
+        The getElementsByTagName() method returns an HTMLCollection object.
+        An HTMLCollection object is an array-like list (collection) of HTML elements.
+    */ 
+    let mypTags = document.getElementsByTagName("p");
+
+    //alert(mypTags);
+    //alert(mypTags.length);
+
+    for(let x of mypTags){
+        x.style.color = 'red';
+    }
+</script>

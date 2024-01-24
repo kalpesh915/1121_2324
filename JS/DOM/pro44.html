@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos ullam architecto, quia repudiandae perferendis iure voluptate, voluptates beatae quae fuga a, doloribus libero reprehenderit reiciendis cumque iste voluptatum facere?</p>
+</body>
+
+</html>
+
+<script>
+
+    /*
+       The HTML DOM NodeList Object
+       A NodeList object is a list (collection) of nodes extracted from a document. A NodeList object is almost the same as an HTMLCollection object. Some (older) browsers return a NodeList object instead of an HTMLCollection for methods like getElementsByClassName().
+       All browsers return a NodeList object for the property childNodes. 
+       Most browsers return a NodeList object for the method querySelectorAll().
+    */ 
+    let mypTags = document.querySelectorAll("p");
+
+    //alert(mypTags);
+    //alert(mypTags.length);
+
+    for(let x of mypTags){
+        x.style.color = 'red';
+    }
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+</head>
+
+<body>
+    <h1 id="op1">Welcome to World of DOM</h1>
+</body>
+
+</html>
+
+<script>
+    document.write("<hr>" +document.getElementById("op1").innerHTML);
+    document.write("<hr>" +document.getElementById("op1").firstChild.nodeValue);
+    document.write("<hr>" +document.getElementById("op1").childNodes[0].nodeValue);
+
+    //alert(document.body.innerHTML);
+    alert(document.documentElement.innerHTML);
+</script>

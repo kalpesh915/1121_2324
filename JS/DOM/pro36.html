@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DOM</title>
+</head>
+
+<body>
+    <div id="mydiv">
+        <h1 id="myh1">Welcome to world of event propagation</h1>
+    </div>
+</body>
+
+</html>
+
+<script>
+    /*
+        There are two ways of event propagation in the HTML DOM, bubbling and capturing.
+
+        In bubbling the inner most element's event is handled first and then the outer: the <p> element's click event is handled first, then the <div> element's click event.
+    */
+
+    let mydiv = document.getElementById("mydiv");
+    let myh1 = document.getElementById("myh1");
+
+    mydiv.addEventListener("click", function(){
+        alert("Clicked on Div Tag");
+    });
+
+    myh1.addEventListener("click", function(){
+        alert("Clicked on H1 Tag");
+    });
+</script>
