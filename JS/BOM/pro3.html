@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="moveWindow()">Move Window</button>
+    <button onclick="resizeWindow()">Resize Window</button>
+    <button onclick="closeWindow()">Close Window</button>
+</body>
+</html>
+
+<script>
+    let myWindow;
+    function openWindow(){
+        myWindow = window.open("", "", "height=300, width=300, statusbar=no, scrollbar=no, addressbar=no");
+        myWindow.focus();
+    }
+
+    function moveWindow(){
+        myWindow.moveTo(300, 300);
+        myWindow.focus();
+    }
+
+    function resizeWindow(){
+        myWindow.resizeTo(500, 500);
+        myWindow.focus();
+    }
+
+    function closeWindow(){
+        myWindow.close();
+    }
+</script>
