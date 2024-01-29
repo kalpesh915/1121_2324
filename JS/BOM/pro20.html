@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="op"></h1>
+</body>
+</html>
+
+<script>
+    let count = 0;
+    let op = document.getElementById("op");
+    function printTime(){
+        op.innerHTML = Date()
+        if(count %2 == 0){
+            op.style.color = "red";
+        }else{
+            op.style.color = "blue";
+        }
+        count++;
+    }
+
+    setInterval(printTime, 1000); // call printTime after 1 seconds
+</script>

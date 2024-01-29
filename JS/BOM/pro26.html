@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="checkCookies()">
+    
+</body>
+</html>
+
+<script>
+    /*
+        following function is used to check cookie value is exist or not 
+        if cookies is not exist then it will call setCookies and to verify cookies it will call
+        getCookies()
+    */ 
+    function checkCookies(){
+        let user = getCookies("username1");
+
+        if(user != "" ){
+            alert("Welcome Back "+user);
+        }else{
+            user = prompt("Enter your Name ");
+            setCookies("username1", user, 30);
+        }
+    }
+
+    /*
+        check username cookies are exist or not
+    */ 
+    function getCookies(cookieName){
+        cookieName += "=";
+        currentCookies = decodeURIComponent(document.cookie);
+        console.log("Current Cookies are : "+currentCookies);
+        let decodedCookie = currentCookies.split(";");
+        console.log("Decoded Cookies are : "+decodedCookie);
+
+        for(let x = 0; x < decodedCookie.length; x++){
+            let tmp = decodedCookie[x];
+
+            while(tmp.charAt(0) == ' '){
+                tmp = tmp.subString(1);
+            }
+
+            //console.log(tmp);
+
+            if(tmp.indexOf(cookieName) == 0){
+                return tmp.substr(cookieName.length, tmp.length);
+            }
+        }
+
+        return "";
+    }
+
+    function setCookies(cookieName, cookieValue, days){
+        const today = new Date();
+        today.setTime(today.getTime() + (days * 24 * 60 * 60 * 1000));
+        let expires = "expires="+today.toUTCString();
+        console.log(expires);
+        document.cookie = `${cookieName}=${cookieValue}; expires=${expires};`;
+    }
+</script>
