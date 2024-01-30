@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local Storage Example</h1>
+    <hr>
+    <button onclick="addNewData()">Add New Data</button>
+    <button onclick="viewData()">View Data</button>
+    <button onclick="countData()">Count Data</button>
+    <button onclick="updateData()">Update Data</button>
+    <button onclick="deleteData()">Delete Data</button>
+    <button onclick="clearData()">Clear All Data</button>
+</body>
+</html>
+
+<script>
+    function addNewData(){
+        let username = prompt("Enter Your name");
+        localStorage.setItem("user", username);
+    }
+
+    function updateData(){
+        let username = prompt("Enter Your name");
+        localStorage.setItem("user", username);
+    }
+
+    function viewData(){
+        alert("Welcome "+localStorage.getItem("user"));
+    }
+
+    function countData(){
+        alert("Total Data in Local Storage is "+localStorage.length);
+    }
+
+    function deleteData(){
+        localStorage.removeItem("user");
+    }
+
+    function clearData(){
+        localStorage.clear();
+    }
+</script>

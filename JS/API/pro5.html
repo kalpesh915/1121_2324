@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" required id="age" name="age" placeholder="Enter Your Age" max="100" min="0" step="1">
+    <input type="button" value="Send Data" onclick="validate()">
+    <hr>
+    <h1 id="op"></h1>
+</body>
+</html>
+
+<script>
+    function validate(){
+        let data = document.getElementById("age");
+
+        if(!data.checkValidity()){
+            document.getElementById("op").innerHTML = data.validationMessage;
+        }
+    }
+</script>

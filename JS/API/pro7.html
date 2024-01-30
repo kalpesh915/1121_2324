@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="email" required id="email" name="email" >
+    <input type="button" value="Send Data" onclick="validate()">
+    <hr>
+    <h1 id="op"></h1>
+</body>
+</html>
+
+<script>
+    function validate(){
+        let data = document.getElementById("email");
+        let op = document.getElementById("op");
+
+        if(data.validity.typeMismatch){
+            op.innerHTML = "Invalid Type of Data";
+        }
+    }
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" required id="fname" name="fname" placeholder="Enter First Name" pattern="[a-z]{10}">
+    <input type="button" value="Send Data" onclick="validate()">
+    <hr>
+    <h1 id="op"></h1>
+</body>
+</html>
+
+<script>
+    function validate(){
+        let data = document.getElementById("fname");
+
+        if(!data.checkValidity()){
+            document.getElementById("op").innerHTML = data.validationMessage;
+        }
+    }
+</script>
