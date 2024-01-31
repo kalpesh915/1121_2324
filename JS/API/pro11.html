@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="op"></h1>
+    <hr>
+    <button onclick="loadData()">Get Data Work</button>
+</body>
+</html>
+
+<script>
+    // The Fetch API interface allows web browser to make HTTP requests to web servers.
+
+    function loadData(){
+        fetch("data.txt").then(function(response){
+            //console.log(response);
+            //console.log(response.text());
+            response.text().then(function(result){
+                document.getElementById("op").innerHTML = result;
+            })
+        });
+    }
+</script>

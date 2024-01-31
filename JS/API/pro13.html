@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getLocation()">Get Location</button>
+    <hr>
+    <h1 id="op"></h1>
+</body>
+</html>
+
+<script>
+    let op = document.getElementById("op");
+
+    function getLocation(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(locationPrinter, errorPrinter);
+        }else{
+            op.innerHTML = "Geo Location Not Supported";
+        }
+    }
+
+    function locationPrinter(location){
+        op.innerHTML = "Latitude : "+location.coords.latitude+" Lobgitude : "+location.coords.longitude;
+    }
+
+    function errorPrinter(error){
+        switch(error.code){
+            case error.PERMISSION_DENIED:{
+                op.innerHTML = "User Denied to Access Location"
+                break;
+            }
+            case error.POSITION_UNAVAILABLE:{
+                op.innerHTML = "Unable to Load Location"
+                break;
+            }
+            case error.TIMEOUT:{
+                op.innerHTML = "Unable to Load Location due to Slow Internet"
+                break;
+            }
+            case error.UNKNOWN_EROR:{
+                op.innerHTML = "Unknown Error for Location"
+                break;
+            }
+        }
+    }
+</script>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, td, th{
+            border: 1px solid black;
+        }
+
+        table{
+            width: 100%;
+        }
+
+        .container{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="loadData()">Get Data Work</button>
+
+    <div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Discount</th>
+                <th>Rating</th>
+                <th>Stock</th>
+                <th>Brand</th>
+                <th>Category</th>
+                <th>Thumbnail</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablebody">
+
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
+
+<script>
+    // The Fetch API interface allows web browser to make HTTP requests to web servers.
+    const APIURL = "https://dummyjson.com/products";
+
+    let tablebody = document.getElementById("tablebody");
+    let productsData = ``;
+
+    function loadData(){
+        fetch(APIURL).then(function(response){
+            //console.log(response);
+            response.json().then(function(result){
+                //console.log(result.products);
+                for(let tmp of result.products){
+                    productsData += `<tr>
+                        <td>${tmp['id']}</td>
+                        <td>${tmp['title']}</td>
+                        <td>${tmp['description']}</td>
+                        <td>${tmp['price']}</td>
+                        <td>${tmp['discountPercentage']}</td>
+                        <td>${tmp['rating']}</td>
+                        <td>${tmp['stock']}</td>
+                        <td>${tmp['brand']}</td>
+                        <td>${tmp['category']}</td>
+                        <td><img src='${tmp['thumbnail']}' style='width:50px; height:50px'></td>
+                    </tr>`;
+                }
+
+                tablebody.innerHTML = productsData;
+            })
+        });    
+    }
+</script>
