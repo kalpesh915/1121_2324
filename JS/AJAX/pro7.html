@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut iure, facilis minima autem officiis qui voluptates! At sed totam illo, dolorem recusandae odio tempore veniam mollitia harum debitis expedita maxime.</p>
+    <hr>
+    <div id="op"></div>
+    <hr>
+    <!-- Generate event to load data via AJAX -->
+    <button onclick="loadData()">Load Data</button>
+</body>
+</html>
+
+<script>
+    let op = document.getElementById("op");
+    function loadData(){
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "data.txt", true);
+        xmlhttp.send();
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                op.innerHTML = xmlhttp.responseText;
+            }
+        }
+    }
+</script>

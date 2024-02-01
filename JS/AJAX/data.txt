@@ -1,0 +1,5 @@
+<h1>Example of AJAX</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quos nostrum ipsam architecto ad alias repellendus ab quia ea possimus quod, dolorem a consectetur dolore sequi. Ducimus ab illum voluptatibus!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sequi provident error ad asperiores aliquid ullam. Et incidunt esse alias, consequatur qui nostrum. Ipsam est, debitis officia ducimus quas voluptatem!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quos nostrum ipsam architecto ad alias repellendus ab quia ea possimus quod, dolorem a consectetur dolore sequi. Ducimus ab illum voluptatibus!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non sequi provident error ad asperiores aliquid ullam. Et incidunt esse alias, consequatur qui nostrum. Ipsam est, debitis officia ducimus quas voluptatem!</p>
