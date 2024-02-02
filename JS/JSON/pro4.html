@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    /*
+        JSON.parse()
+        A common use of JSON is to exchange data to/from a web server. When receiving data from a web server, the data is always a string. Parse the data with JSON.parse(), and the data becomes a JavaScript object.
+    */ 
+    const JSONData = '{"roll":1, "fname":"Alan", "lname":"Thomas","city":"Rajkot","married":false,"education":["10th", "12th", "B.Sc.", "M.Sc.", "Ph.d."],"family":{"brothers":1, "sisters":1}, "computer":null, "joiningDate" : "22nd March 2022"}';
+
+    document.write("<hr>"+JSONData);
+
+    const JSObject = JSON.parse(JSONData);
+
+    console.log(JSObject);
+</script>

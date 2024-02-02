@@ -1,0 +1,9 @@
+{
+    "students" : [
+        {"roll" : 121, "fname" : "Meet", "lname" : "Sinojiya", "city" : "Morbi"},
+        {"roll" : 122, "fname" : "Ansh", "lname" : "Amrutiya", "city" : "Rajkot"},
+        {"roll" : 123, "fname" : "Brijesh", "lname" : "Miyatra", "city" : "Rajkot"},
+        {"roll" : 124, "fname" : "Pooja", "lname" : "Mori", "city" : "Rajkot"},
+        {"roll" : 125, "fname" : "Sanjana", "lname" : "Sonagra", "city" : "Rajkot"}
+    ]
+}
