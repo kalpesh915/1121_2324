@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- JQuery Local downloaded file -->
+    <script src="Jquery.3.7.1.min.js"></script>
+    <style>
+        .demo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Hide</button>
+    <hr>
+    <h1 class="demo">This is Sample Heading of Page</h1>
+    <p id="p1">ID p 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum iure velit quidem maxime ad dolorum repellendus dolorem. Blanditiis, eveniet sit tempore, sequi laborum deleniti nam possimus similique nihil asperiores repellat.</p>
+    <p class="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum iure velit quidem maxime ad dolorum repellendus dolorem. Blanditiis, eveniet sit tempore, sequi laborum deleniti nam possimus similique nihil asperiores repellat.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum iure velit quidem maxime ad dolorum repellendus dolorem. Blanditiis, eveniet sit tempore, sequi laborum deleniti nam possimus similique nihil asperiores repellat.</p>
+    <p class="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum iure velit quidem maxime ad dolorum repellendus dolorem. Blanditiis, eveniet sit tempore, sequi laborum deleniti nam possimus similique nihil asperiores repellat.</p>
+    <p class="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum iure velit quidem maxime ad dolorum repellendus dolorem. Blanditiis, eveniet sit tempore, sequi laborum deleniti nam possimus similique nihil asperiores repellat.</p>
+</body>
+</html>
+
+<script>
+    /*
+        
+    */ 
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $(this).hide(2000);  // current selected element (like btn in our example)
+        });
+    });
+</script>
