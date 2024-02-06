@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Jquery.3.7.1.min.js"></script>
+    <script src="Jquery.color.js"></script>
+    <style>
+        .heading{
+            position: relative;
+            left: 0px;
+            background-color: gray;
+            color: black;
+            padding: 20px;
+            font-size: 20px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Run Animation</button>
+    <hr>
+    <h1 id="op" class="heading">Welcome to JQuery</h1>
+</body>
+
+</html>
+
+<script>
+    /*
+        jQuery - Chaining
+        With jQuery, you can chain together actions/methods.
+        Chaining allows us to run multiple jQuery methods (on the same element) within a single statement.
+    */ 
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("#op").animate({"width":"500px"}).slideUp(1000).slideDown(2000).fadeOut(3000).fadeIn(500).animate({"color":"white"}).hide(100).show(100).animate({"background-color":"black"}, 3000);
+        });
+    });
+</script>

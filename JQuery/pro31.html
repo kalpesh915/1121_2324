@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- JQuery Local downloaded file -->
+    <script src="Jquery.3.7.1.min.js"></script>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <hr>
+    <p id="op">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nostrum sunt repellat ad, porro reiciendis natus quibusdam doloremque facilis itaque aperiam quidem similique, consectetur dolorum dolores, autem nisi! Illo, tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis a, sapiente vero, cupiditate veritatis harum, ab reiciendis quis enim sed commodi nihil fugit fuga hic officia explicabo. Atque, veniam accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, optio eum tenetur nisi facilis ex! Quisquam necessitatibus earum eum expedita asperiores molestias doloremque modi, quis consectetur ab corporis accusantium reiciendis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, doloribus at sit nesciunt dolore quia inventore, sint nemo, ex a nulla odit vitae reprehenderit tenetur iure qui expedita nam deserunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, hic. Quo quae tenetur deleniti ad, qui illo tempora architecto pariatur ratione numquam voluptatem praesentium maxime fuga esse est possimus odio.</p>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#op").hide();
+        });
+
+        $("#btn2").click(function(){
+            $("#op").show();
+        });
+    });
+</script>
