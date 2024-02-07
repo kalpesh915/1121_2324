@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Jquery.3.7.1.min.js"></script>
+    <script src="Jquery.color.js"></script>
+    <style>
+        .heading{
+            position: relative;
+            left: 0px;
+            background-color: yellow;
+            color: red;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Update Value</button>
+    <hr>
+    <h1 id="op" class="heading">Click Button to Update Value</h1>
+</body>
+
+</html>
+
+<script>
+    let count = 0;
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("#op").text((index, oldvalue)=>{
+                console.log("Old Value is "+oldvalue);
+                count++;
+                return count;
+            });
+        });
+    });
+</script>

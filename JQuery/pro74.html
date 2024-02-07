@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Jquery.3.7.1.min.js"></script>
+    <script src="Jquery.color.js"></script>
+    <style>
+        .heading{
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            color: red;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Set Css</button>
+    
+    <hr>
+    <h1 id="op" class="heading">Welcome to Jquery</h1>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        
+        $("#btn1").click(function () {
+            $("#op").css({
+                "padding" : "50px",
+                "color" : "white",
+                "background-color" : "black",
+                "text-align" : "center"
+            });
+        });
+    });
+</script>
