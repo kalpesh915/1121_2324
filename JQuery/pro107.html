@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Jquery.3.7.1.min.js"></script>
+    <script src="Jquery.color.js"></script>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <hr>
+    <p id="op">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+</body>
+
+</html>
+
+<script>
+    /*
+        jQuery and Other JavaScript Frameworks
+        As you already know; jQuery uses the $ sign as a shortcut for jQuery. There are many other popular JavaScript frameworks like: Angular, Backbone, Ember, Knockout, and more. What if other JavaScript frameworks also use the $ sign as a shortcut? If two different frameworks are using the same shortcut, one of them might stop working. The jQuery team have already thought about this, and implemented the noConflict() method.
+
+        You can also create your own shortcut very easily. The noConflict() method returns a reference to jQuery, that you can save in a variable, for later use. Here is an example:
+    */
+    
+    const jq = $.noConflict();
+    jq(document).ready(function () {
+        jq("#btn1").click(function(){
+            jq("#op").hide(2000);
+        });
+
+        jq("#btn2").click(function(){
+            jq("#op").show(2000);
+        });
+    });
+</script>

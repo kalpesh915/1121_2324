@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Jquery.3.7.1.min.js"></script>
+    <script src="Jquery.color.js"></script>
+    <style>
+        .ancestors * {
+            display: block;
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            color: gray;
+            border: 3px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ancestors">
+        <div>
+            DIV (Great GrandParent)
+            <ul>
+                UL (GrandParent)
+                <li>
+                    LI (Parent)
+                    <span>Span (Child)</span>
+                </li>
+                <li>
+                    LI (Parent)
+                    <span>Span (Child)</span>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            DIV (Parent)
+            <span>Span (Child)</span>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    /*
+        With jQuery you can traverse down the DOM tree to find descendants of an element.
+        A descendant is a child, grandchild, great-grandchild, and so on.
+       jQuery find() Method
+       The find() method returns descendant elements of the selected element, all the way down to the last descendant.
+    */
+    $(document).ready(function () {
+        $("div").find("*").css({
+            "color": "red",
+            "border": "3px solid red"
+        });
+    });
+</script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Jquery.3.7.1.min.js"></script>
+    <script src="Jquery.color.js"></script>
+    <style>
+        .demo{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+    <p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+    <p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+    <p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ea quisquam nesciunt velit temporibus maiores, aperiam est, perspiciatis dolorem repellendus in atque eos modi dolores natus aut minima, iusto nisi.</p>
+</body>
+
+</html>
+
+<script>
+    /*
+        jQuery not() Method
+        The not() method returns all elements that do not match the criteria.
+        Tip: The not() method is the opposite of filter().
+    */
+    
+    $(document).ready(function () {
+        $("p").not(".demo").css("color", "red");    
+    });
+</script>
