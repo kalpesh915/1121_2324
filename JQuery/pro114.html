@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Jquery.3.7.1.min.js"></script>
+    <script src="Jquery.color.js"></script>
+</head>
+
+<body>
+    <button id="btn1">Add New Data</button>
+    <button id="btn2">Get All Data</button>
+</body>
+
+</html>
+
+<script>
+    /*
+        The jQuery get() and post() methods are used to request data from the server with an HTTP GET or POST request.
+
+        Steps for Start and use of JSON server
+
+        1   Must Install Node JS on your System (https://nodejs.org/en/download)
+        2   Run following Commands on CMD
+            node - v
+            npm -v
+        3   now time to install JSON-server (run only once when install server)
+            npm install json-server -g
+        4   now create file 
+            json-server --watch mydata.json
+        5   open mydata.json file in vscode
+        6   edit mydata.json file and delete all the data from JSON file
+        7   create new API named students
+        8   open browser and go to localhost:3000 and select students
+    */
+
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            let fname = prompt("Enter First Name");
+            let lname = prompt("Enter Last Name");
+            const postData = {
+                "fname" : fname,
+                "lname" : lname
+            }
+            $.post("http://localhost:3000/students", JSON.stringify(postData),
+                function (data, status) {
+                    if (status == "success") {
+                        console.log("New Record Created");
+                    } else {
+                        console.error("Error while inserting new data");
+                    }
+                });
+        });
+
+        $("#btn2").click(function () {
+            $.get("http://localhost:3000/students", function (data, statusText) {
+                //console.log(statusText);
+                console.log(data);
+            });
+        });
+    });
+</script>

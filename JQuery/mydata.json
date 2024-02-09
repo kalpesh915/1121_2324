@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "fname": "Meet",
+      "lname": "Sinojiya",
+      "id": 1
+    },
+    {
+      "fname": "Meet",
+      "lname": "Sinojiya",
+      "id": 2
+    },
+    {
+      "id": "ed4d",
+      "fname": "asdasd",
+      "lname": "asdasd"
+    },
+    {
+      "id": "e05e",
+      "fname": "ansh",
+      "lname": "amrutiya"
+    },
+    {
+      "id": "7c09",
+      "fname": "krishil",
+      "lname": "trivedi"
+    },
+    {
+      "id": "1c1c",
+      "fname": "sunny",
+      "lname": "sata"
+    }
+  ]
+}
