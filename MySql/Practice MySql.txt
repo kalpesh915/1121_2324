@@ -1,0 +1,9 @@
+Design Database for one of the following Project:
+
+1	Hotel Management System
+2	Hostel Management System
+3	College Management System
+4	Car Rental Company
+5	E Commerce Website
+
+create atleast 5 tables with proper data type and constraints.
