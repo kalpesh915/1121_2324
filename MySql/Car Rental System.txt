@@ -1,0 +1,23 @@
+cars
+carid, carnumber, brand, modal, make, color, seating, fuel, ac, 
+
+users
+userid, fname, lname, email, phone, whatsapp, address, datrofbirth, photo, drivinglicance, adharcard, status
+
+booking
+bookingid, bookingdate, carid, startdate, enddate, userid, amount, deposit, driverid, status
+
+drivers
+driverid,fname, lname, email, phone, whatsapp, address, datrofbirth, photo, drivinglicance, dlexpirydate, adharcard, status 
+
+repair
+repairid, carid, repairsatrtdate, repairenddate, repaircost, vendor, driver
+
+fuel
+fuelid, fueldate, carid, quantity, rate, driver
+
+review
+reviewid, date, customerid, bookingid, message, ratings
+
+insurance
+insuranceid carid, startdate, enddate, renewdate, amount
