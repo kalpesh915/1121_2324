@@ -1,0 +1,2 @@
+<h1>Welcome to World of PHP</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam suscipit nemo saepe fuga accusamus, amet odio adipisci doloremque, quis illum debitis nulla placeat rem atque magnam! Consequatur omnis provident nihil.</p>
