@@ -1,0 +1,1 @@
+welcome meet to world of files with PHP\n
