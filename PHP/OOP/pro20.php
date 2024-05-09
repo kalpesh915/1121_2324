@@ -1,11 +1,16 @@
 <?php
-    // single level inheritance
+    /*
+        try to access private data of parent class
+    */ 
 
     class Math1{
-        public function Sum($ip1, $ip2){
+        /*
+            Sum and Sub Both methods are private for Math1 class, you are not allowd to access these methods from outside of Math1 Class.
+        */
+        private function Sum($ip1, $ip2){
             echo "<hr> Sum of $ip1 and $ip2 is ".($ip1 + $ip2);
         }
-        public function Sub($ip1, $ip2){
+        private function Sub($ip1, $ip2){
             echo "<hr> Sub of $ip1 and $ip2 is ".($ip1 - $ip2);
         }
     }
