@@ -4,6 +4,16 @@
     ob_start();
 
     require_once("connection.php");
+
+    // code for delete data
+    if(isset($_GET["delete"])){
+        $roll = $_GET["roll"];
+
+        $sqlquery = "delete from students where roll = $roll";
+        $connection->query($sqlquery);
+
+        header("location:index.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -106,10 +116,10 @@
                                 <td>$row[created_at]</td>
                                 <td>$row[updated_at]</td>
                                 <td>
-                                    <a href=''class='btn btn-primary'>
+                                    <a href='update.php?roll=$row[roll]' class='btn btn-primary'>
                                     <i class='fa fa-pen'></i></a>
-                                    <a href=''class='btn btn-danger'>
-                                    <i class='fa fa-trash'></i></a>
+                                    <button type='button' class='btn btn-danger' onclick='confirmDelete($row[roll])'>
+                                    <i class='fa fa-trash'></i></button>
                                 </td>
                             </tr>";
                         }
@@ -125,6 +135,16 @@
     </div>
 </body>
 </html>
+
+<script>
+    function confirmDelete(roll){
+        //alert(roll);
+
+        if(confirm("Are you Sure to Delete This Record with Roll No. "+roll+" ?")){
+            location.assign("index.php?delete=1&roll="+roll);
+        }
+    }
+</script>
 
 <?php
     // code for add new student in database
