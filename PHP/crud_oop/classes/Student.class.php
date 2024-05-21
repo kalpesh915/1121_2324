@@ -19,6 +19,16 @@
             $sqlquery = "delete from students where roll = $roll";
             $this->connection->query($sqlquery);
         }
+
+        public function getStudent($roll){
+            $sqlquery = "select * from students where roll = $roll";
+            return $this->connection->query($sqlquery);
+        }
+
+        public function updateStudent($roll, $fname, $lname, $city, $email, $phone, $gender){
+            $sqlquery = "update students set fname = '$fname', lname = '$lname', city = '$city', email = '$email', phone = '$phone', gender = '$gender' where roll = $roll";
+            $this->connection->query($sqlquery);
+        }
     }
 
     $student = new Student();
