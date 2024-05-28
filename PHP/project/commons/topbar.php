@@ -71,21 +71,21 @@
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="profile">
                       <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                       Profile
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="password">
+                      <i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>
+                      Password
+                  </a>
+                  <a class="dropdown-item" href="metatags">
                       <i class="fas fa-tag fa-sm fa-fw mr-2 text-gray-400"></i>
                       Meta Keywords
                   </a>
                   <a class="dropdown-item" href="#">
                       <i class="fas fa-hdd fa-sm fa-fw mr-2 text-gray-400"></i>
                       Backup
-                  </a>
-                  <a class="dropdown-item" href="#">
-                      <i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>
-                      Password
                   </a>
                   <a class="dropdown-item" href="#">
                       <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
